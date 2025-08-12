@@ -18,9 +18,9 @@ Volume Edited by:
   * Khuong An Nguyen
   * Zhiyuan Luo
   * Harris Papadopoulos
-  * Tuwe L"ofstr"om
+  * Tuwe Löfström
   * Lars Carlsson
-  * Henrik Bostr"om
+  * Henrik Boström
 
 Series Editors:
   * Neil D. Lawrence

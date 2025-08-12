@@ -11,22 +11,29 @@ published: 2025-08-12
 conference_number: '14'
 volume: '266'
 sections:
-- name: Foundations and Generalisations of Conformal Prediction; Privacy, Robustness
-    and Security; Multi-Output and Multi-Label Prediction; Conformal Regression and
-    Predictive Distributions; Explainability and Decision Making; Applications; Online
-    Testing, Change and Anomaly Detection; Extended Abstracts
-  title: Foundations and Generalisations of Conformal Prediction; Privacy, Robustness
-    and Security; Multi-Output and Multi-Label Prediction; Conformal Regression and
-    Predictive Distributions; Explainability and Decision Making; Applications; Online
-    Testing, Change and Anomaly Detection; Extended Abstracts
-  published: 2025-08-12
+- name: Foundations and Generalisations of Conformal Prediction
+  title: Foundations and Generalisations of Conformal Prediction
+- name: Privacy, Robustness and Security
+  title: Privacy, Robustness and Security
+- name: Multi-Output and Multi-Label Prediction
+  title: Multi-Output and Multi-Label Prediction
+- name: Conformal Regression and Predictive Distributions
+  title: Conformal Regression and Predictive Distributions
+- name: Explainability and Decision Making
+  title: Explainability and Decision Making
+- name: Applications
+  title: Applications
+- name: Online Testing, Change and Anomaly Detection
+  title: Online Testing, Change and Anomaly Detection
+- name: Extended Abstracts
+  title: Extended Abstracts
 layout: proceedings
 issn: 2640-3498
 id: COPA2025
 month: 0
-cycles: true
-bibtex_editor: Nguyen, Khuong An and Luo, Zhiyuan and Papadopoulos, Harris and L"{o}fstr"{o}m,
-  Tuwe and Carlsson, Lars and Bostr"{o}m, Henrik
+cycles: false
+bibtex_editor: Nguyen, Khuong An and Luo, Zhiyuan and Papadopoulos, Harris and L\"{o}fstr\"{o}m,
+  Tuwe and Carlsson, Lars and Bostr\"{o}m, Henrik
 editor:
 - given: Khuong An
   family: Nguyen
@@ -35,26 +42,25 @@ editor:
 - given: Harris
   family: Papadopoulos
 - given: Tuwe
-  family: L"ofstr"om
+  family: Löfström
 - given: Lars
   family: Carlsson
 - given: Henrik
-  family: Bostr"om
+  family: Boström
 title: Proceedings of Machine Learning Research
 description: |
   Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications
     Held in Royal Holloway, London, UK on 10-12 September 2025
 
-  Published in 1 Sections as Volume 266 by the Proceedings of Machine Learning Research.
-    Foundations and Generalisations of Conformal Prediction; Privacy, Robustness and Security; Multi-Output and Multi-Label Prediction; Conformal Regression and Predictive Distributions; Explainability and Decision Making; Applications; Online Testing, Change and Anomaly Detection; Extended Abstracts published on 12 August 2025
+  Published as Volume 266 by the Proceedings of Machine Learning Research on 12 August 2025.
 
   Volume Edited by:
     Khuong An Nguyen
     Zhiyuan Luo
     Harris Papadopoulos
-    Tuwe L"ofstr"om
+    Tuwe Löfström
     Lars Carlsson
-    Henrik Bostr"om
+    Henrik Boström
 
   Series Editors:
     Neil D. Lawrence
