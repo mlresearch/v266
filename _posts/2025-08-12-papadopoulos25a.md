@@ -6,6 +6,7 @@ abstract: This preface introduces the proceedings of the Fourteenth Symposium on
 booktitle: Proceedings of the Fourteenth Symposium on Conformal and Probabilistic
   Prediction with Applications
 pdf: https://raw.githubusercontent.com/mlresearch/v266/main/assets/papadopoulos25a/papadopoulos25a.pdf
+section: Preface
 url: https://proceedings.mlr.press/v266/papadopoulos25.html
 crossref: COPA2025
 layout: inproceedings
