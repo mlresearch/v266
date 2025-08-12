@@ -20,8 +20,8 @@ lastpage: 5
 page: 1-5
 order: 1
 cycles: false
-bibtex_author: Papadopoulos, Harris and Nguyen, Khuong An and Luo, Zhiyuan and L"{o}fstr"{o}m,
-  Tuwe and Carlsson, Lars and Bostr"{o}m, Henrik
+bibtex_author: Papadopoulos, Harris and Nguyen, Khuong An and Luo, Zhiyuan and L\"{o}fstr\"{o}m,
+  Tuwe and Carlsson, Lars and Bostr\"{o}m, Henrik
 author:
 - given: Harris
   family: Papadopoulos
@@ -30,11 +30,11 @@ author:
 - given: Zhiyuan
   family: Luo
 - given: Tuwe
-  family: L"ofstr"om
+  family: Löfström
 - given: Lars
   family: Carlsson
 - given: Henrik
-  family: Bostr"om
+  family: Boström
 date: 2025-08-12
 address:
 container-title: Proceedings of the Fourteenth Symposium on Conformal and Probabilistic
