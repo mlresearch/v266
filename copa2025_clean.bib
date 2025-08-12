@@ -1,0 +1,1578 @@
+@Proceedings{COPA2025,
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},  
+  name =      {Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications (COPA 2025)},
+  shortname = {COPA},
+  editor =    {Nguyen, Khuong An and Luo, Zhiyuan and Papadopoulos, Harris and L"{o}fstr"{o}m, Tuwe and Carlsson, Lars and Bostr"{o}m, Henrik},
+  publisher = {PMLR},
+  series =    {Proceedings of Machine Learning Research},
+  year = 	    {2025},
+  start =     {2025-09-10},
+  end =       {2025-09-12},
+  published = {2025-08-12},
+  address =   {Royal Holloway, London, UK},
+  conference_url = {https://copa-conference.com/},
+  conference_number = 14,
+  volume =    266,
+  sections = {Foundations and Generalisations of Conformal Prediction; Privacy, Robustness and Security; Multi-Output and Multi-Label Prediction; Conformal Regression and Predictive Distributions; Explainability and Decision Making; Applications; Online Testing, Change and Anomaly Detection; Extended Abstracts}
+}
+
+@InProceedings{papadopoulos25,
+  title = 	 {Preface},
+  abstract = {This preface introduces the proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications (COPA 2025), highlighting the key themes and contributions presented at the conference.},
+  author =       {Papadopoulos, Harris and Nguyen, Khuong An and Luo, Zhiyuan and L"{o}fstr"{o}m, Tuwe and Carlsson, Lars and Bostr"{o}m, Henrik},
+  booktitle = 	 {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = 	 {1--5},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/hulsman25/papadopoulos25.pdf},
+  url = {https://proceedings.mlr.press/v266/papadopoulos25.html},
+  crossref = {COPA2025}
+}
+
+@InProceedings{vovk25b,
+  author = {Vovk, Vladimir},
+  title = {Inductive randomness predictors: beyond conformal},
+  abstract = {This paper introduces inductive randomness predictors,
+which form a proper superset of inductive conformal
+predictors but have the same principal property of validity
+under the assumption of randomness (i.e., of IID data). It
+turns out that every non-trivial inductive conformal
+predictor is strictly dominated by an inductive randomness
+predictor, although the improvement is not great, at most a
+factor of $e\approx2.72$ in the case of e-prediction. The
+dominating inductive randomness predictors are more
+complicated and more difficult to compute; besides, an
+improvement by a factor of $e$ is rare. Therefore, this paper
+does not suggest replacing inductive conformal predictors
+by inductive randomness predictors and only calls for a
+more detailed study of the latter.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/vovk25b/vovk25b.pdf},
+  url = {https://proceedings.mlr.press/v266/vovk25b.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {6--33},
+  section = {Foundations and Generalisations of Conformal Prediction},
+  crossref = {COPA2025}
+}
+
+@InProceedings{balinsky25,
+  author = {Balinsky, Alexander and Balinsky, Alexander David},
+  title = {When Can We Reuse a Calibration Set for Multiple Conformal
+Predictions?},
+  abstract = {Reliable uncertainty quantification is crucial for the
+trustworthiness of machine learning applications. Inductive
+Conformal Prediction (ICP) offers a distribution-free
+framework for generating prediction sets or intervals with
+user-specified confidence. However, standard ICP guarantees
+are marginal and typically require a fresh calibration set
+for each new prediction to maintain their validity. This
+paper addresses this practical limitation by demonstrating
+how $e$-conformal prediction, in conjunction with Hoeffding's
+inequality, can enable the repeated use of a single
+calibration set with a high probability of preserving the
+desired coverage. Through a case study on the CIFAR-10
+dataset, we train a deep neural network and utilise a
+calibration set to estimate a Hoeffding correction. This
+correction allows us to apply a modified Markov's
+inequality, leading to the construction of prediction sets
+with quantifiable confidence. Our results illustrate the
+feasibility of maintaining provable performance in
+conformal prediction while enhancing its practicality by
+reducing the need for repeated calibration. The code for
+this work is publicly available.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/balinsky25/balinsky25.pdf},
+  url = {https://proceedings.mlr.press/v266/balinsky25.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {34--42},
+  section = {Foundations and Generalisations of Conformal Prediction},
+  crossref = {COPA2025}
+}
+
+@InProceedings{nouretdinov25,
+  author = {Nouretdinov, Ilia},
+  title = {Venn-Abers Testing of Exchangeability},
+  abstract = {A recurrent problem in many domains is the accurate and
+rapid detection of a change in the distribution
+of observed variables. This is important since our
+algorithms have been trained for a certain data
+distribution, and if the distribution has changed, the
+results will not be accurate and/or valid any longer.
+Instances of this problem, which are generally referred to
+as change-point detection, are found in fault detection in
+vehicle control systems, detection of the onset of an
+epidemic, and many other applications.
+
+Recently, new methods based on reliable machine learning
+have shown important advantages of this statistical task.
+Conformal Test Martingales (CTM) allow one to avoid
+this limitation and obtain valid results without
+information about used distributions.
+This is done with the assumption that the data are i.i.d.
+(or exchangeable) in online mode, and the corresponding
+martingale accumulates evidence against this assumption.
+
+This work aims to extend the conformal framework and
+consider the other family of reliable machine learning
+methods, the Venn-Abers method of probabilistic prediction,
+to test the data for change points.
+This work shows how Venn-Abers testing of exchangeability
+(VATE) can be founded on the ground of $e$-value theory,
+including recently developed $e$-pseudomartingales, and
+studies its advantages and drawbacks, compared to CTM.
+Our conclusion is that the efficiency of this approach is
+related to the type of causality in the data set.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/nouretdinov25/nouretdinov25.pdf},
+  url = {https://proceedings.mlr.press/v266/nouretdinov25.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {43--62},
+  section = {Foundations and Generalisations of Conformal Prediction},
+  crossref = {COPA2025}
+}
+
+@InProceedings{angelman25,
+  author = {Angelman, Shachar and Nizhar, Rotem and Goldberger, Jacob},
+  title = {Calibrating Without Labels: Source-Free Conformal
+Prediction Using Pseudo-Labels},
+  abstract = {We address the problem of conformal prediction (CP) in the
+challenging setting of source-free domain adaptation
+(SFDA), where models must be calibrated using only
+unlabeled data from the target domain. Existing CP methods
+for domain shift rely heavily on labeled source data and
+importance weighting (IW), but we demonstrate that these
+approaches perform poorly in practice, even when source
+labels are available. As an alternative, we propose
+Source-Free Conformal Prediction (SFCP), a simple and
+effective method that replaces the unavailable target
+labels with pseudo-labels generated by the source model. We
+show both theoretically and empirically that, despite their
+inherent noise, these pseudo-labels can be reliably used to
+estimate conformal thresholds. Our method requires no
+access to source data and no  hyperparameter tuning, making
+it particularly suitable for real-world SFDA scenarios.
+Experiments across more than 100 domain shifts demonstrate
+that SFCP achieves coverage levels comparable to oracle CP
+while consistently outperforming IWbased methods.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/angelman25/angelman25.pdf},
+  url = {https://proceedings.mlr.press/v266/angelman25.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {63--81},
+  section = {Foundations and Generalisations of Conformal Prediction},
+  crossref = {COPA2025}
+}
+
+@InProceedings{penso25a,
+  author = {Penso, Coby and Goldberger, Jacob and Fetaya, Ethan},
+  title = {Conformal Prediction of Classifiers with Many Classes based
+on Noisy Labels},
+  abstract = {Conformal Prediction (CP) is a method to control prediction
+uncertainty by producing a small prediction set,   ensuring
+a predetermined probability that the true class lies within
+this set.   This is commonly done by defining a score,
+based on the model predictions, and setting a threshold on
+this score using a validation set. In this study, we
+address the problem of CP calibration when we only have
+access to a validation set with noisy labels. We show how
+we can estimate the noise-free conformal threshold based on
+the noisy labeled data. We derive a finite-sample coverage
+guarantee under uniform noise that remains effective even
+in classification tasks with a large number of classes. We
+dub our approach Noise-Aware Conformal Prediction (NACP).
+We illustrate the performance of the proposed results on
+several standard image classification datasets with a large
+number of classes.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/penso25a/penso25a.pdf},
+  url = {https://proceedings.mlr.press/v266/penso25a.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {82--95},
+  section = {Privacy, Robustness and Security},
+  crossref = {COPA2025}
+}
+
+@InProceedings{penso25b,
+  author = {Penso, Coby and Mahpud, Bar and Goldberger, Jacob and Sheffet, Or},
+  title = {Privacy-Preserving Conformal Prediction Under Local
+Differential Privacy},
+  abstract = {Conformal prediction (CP) provides sets of candidate
+classes with a guaranteed probability of containing the
+true class. However, it typically relies on a calibration
+set with clean labels. We address privacy-sensitive
+scenarios where the aggregator is untrusted and can only
+access a perturbed version of the true labels. We propose
+two complementary approaches under local differential
+privacy (LDP). In the first approach, users do not access
+the model but instead provide their input features and a
+perturbed label using a k-ary randomized response. In the
+second approach, which enforces stricter privacy
+constraints, users add noise to their conformity score by
+binary search response. This method requires access to the
+classification model but preserves both data and label
+privacy. Both approaches compute the conformal threshold
+directly from noisy data without accessing the true labels.
+We prove finite-sample coverage guarantees and demonstrate
+robust coverage even under severe randomization. This
+approach unifies strong local privacy with predictive
+uncertainty control, making it well-suited for sensitive
+applications such as medical imaging or large language
+model queries, regardless of whether users can (or are
+willing to) compute their own scores.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/penso25b/penso25b.pdf},
+  url = {https://proceedings.mlr.press/v266/penso25b.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {96--112},
+  section = {Privacy, Robustness and Security},
+  crossref = {COPA2025}
+}
+
+@InProceedings{carlevaro25,
+  author = {Carlevaro, Alberto and Oneto, Luca and Anguita, Davide and Roli, Fabio},
+  title = {Provably Efficient and Robust Conformal Prediction under a
+Realistic Threat Model},
+  abstract = {Robust conformal prediction is a model-agnostic technique
+designed to construct predictive sets with guaranteed
+coverage, assuming data exchangeability, even under
+adversarial attacks.
+Two primary strategies have been explored to address
+vulnerabilities to these attacks.
+The first strategy employs randomization, which is
+computationally efficient but fails to provide formal
+performance guarantees without resulting in overly
+conservative predictive sets.
+The second strategy involves formal verification, which
+restores coverage guarantees but leads to excessively
+conservative predictive sets and prohibitive computational
+overhead.
+Indeed, verification generally becomes NP-hard as it
+attempts to cope with attacks that are practically
+impossible, rendering some security claims unfalsifiable.
+In this paper, we propose a novel, provably efficient
+robust conformal prediction method by clearly defining a
+realistic threat model.
+Specifically, we assume explicit knowledge of the set of
+potential adversarial attacks, aligning our approach with
+standard certification procedures designed to certify
+against specific, identified threats.
+We demonstrate that attacks targeting the model can
+effectively be reframed as attacks on the score function,
+allowing us to recalibrate the score quantile to account
+for these known attacks and thereby restore desired
+coverage guarantees.
+It is worth noting that our approach allows to easily
+incorporate unknown or emerging (zero-day) attacks upon
+discovery, thus reestablishing coverage guarantees.
+By avoiding computationally intensive verification and
+operating under realistic threat assumptions, our approach
+achieves both efficiency and provable robustness.
+Empirical evaluations on real-world classification datasets
+and comparisons with state-of-the-art methods support the
+effectiveness and practicality of our proposed solution.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/carlevaro25/carlevaro25.pdf},
+  url = {https://proceedings.mlr.press/v266/carlevaro25.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {113--132},
+  section = {Privacy, Robustness and Security},
+  crossref = {COPA2025}
+}
+
+@InProceedings{almeida25,
+  author = {Almeida, Duarte C. and Bravo, Jo\~{a}o and Bono, Jacopo and Bizarro, Pedro and Figueiredo, M\'{a}rio A. T.},
+  title = {High Probability Risk Control Under Covariate Shift},
+  abstract = {Distribution-free uncertainty quantification is an emerging
+field, which encompasses risk control techniques in finite
+sample settings with minimal distributional assumptions,
+making it suitable for high-stakes applications. In
+particular, high-probability risk control methods, namely
+the learn then test (LTT) framework, use a calibration set
+to control multiple risks with high confidence. However,
+these methods rely on the assumption that the calibration
+and target distributions are identical, which can pose
+challenges, for example, when controlling label-dependent
+risks under the absence of labeled target data. In this
+work, we propose a novel extension of LTT that handles
+covariate shifts by directly weighting calibration losses
+with importance weights. We validate our method on a
+synthetic fraud detection task, aiming to control the false
+positive rate while minimizing false negatives, and on an
+image classification task, to control the miscoverage of a
+set predictor while minimizing the average set size. The
+results show that our approach consistently yields less
+conservative risk control than existing baselines based on
+rejection sampling, which results in overall lower false
+negative rates and smaller prediction sets.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/almeida25/almeida25.pdf},
+  url = {https://proceedings.mlr.press/v266/almeida25.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {133--152},
+  section = {Privacy, Robustness and Security},
+  crossref = {COPA2025}
+}
+
+@InProceedings{johnstone25,
+  author = {Johnstone, Chancellor and Ndiaye, Eugene},
+  title = {Exact and Approximate Conformal Inference for Multi-Output
+Regression},
+  abstract = {It is common in machine learning to estimate a response $y$
+given covariate information $x$. However, these predictions
+alone do not quantify any uncertainty associated with said
+predictions. One way to overcome this deficiency is with
+conformal inference methods, which construct a set
+containing the unobserved response with a prescribed
+probability. Unfortunately, even with a one-dimensional
+response, conformal inference is computationally expensive
+despite recent encouraging advances. In this paper, we
+explore multi-output regression, delivering exact
+derivations of conformal inference p-values when the
+predictive model can be described as a linear function of
+$y$. Additionally, we introduce a multivariate extension of
+rootCP as well unionCP as efficient ways of approximating
+the conformal prediction region for a wide array of
+multi-output predictors, both linear and nonlinear, while
+preserving computational advantages. We also provide both
+theoretical and empirical evidence of the effectiveness of
+our methods using both real-world and simulated data.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/johnstone25/johnstone25.pdf},
+  url = {https://proceedings.mlr.press/v266/johnstone25.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {153--172},
+  section = {Multi-Output and Multi-Label Prediction},
+  crossref = {COPA2025}
+}
+
+@InProceedings{law25,
+  author = {Law, Frederick},
+  title = {Conformal multi-hop relation detection and classification
+in knowledge graphs},
+  abstract = {Knowledge graphs (KGs) have seen an increasing use in
+application domains where information may be deemed
+proprietary, protected, or sensitive, such as enterprise,
+medical, or security applications. For such systems,
+incorporating uncertainty quantification (UQ) is critically
+necessary when KG information is passed to others for any
+downstream usage. Moreover, such systems often have
+constraints on data availability due to safety or legal
+restrictions, and as such full access to well-labeled
+training data may be unavailable. Conformal prediction is a
+distribution-free UQ strategy which is well-equipped to
+handle both of these concerns, as it produces prediction
+sets with statistically valid guarantees and is highly
+compatible with black-box models, which may be shared more
+easily than training data. In this work, we develop a novel
+conformal framework for simultaneously detecting and
+classifying multi-hop relations between entities in a KG,
+which only assumes access to a pre-trained KG model over
+triples and does not require multi-hop training data. Our
+framework utilizes a greedy approach, wherein we use
+successive conformal predictors to build a
+sparsely-supported scoring function in the high-dimensional
+multi-hop relation space. In numerical experiments on
+publicly available benchmark KGs with variable size and
+multi-hop length, our conformal multi-hop relation sets
+offer substantial reduction relative to the multi-hop
+relation space.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/law25/law25.pdf},
+  url = {https://proceedings.mlr.press/v266/law25.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {173--192},
+  section = {Multi-Output and Multi-Label Prediction},
+  crossref = {COPA2025}
+}
+
+@InProceedings{schlembach25,
+  author = {Schlembach, Filip and Smirnov, Evgueni and Winands, Mark H. M.},
+  title = {Dynamic Conformal Prediction for Multi-Target Regression:
+Optimising Informational Efficiency under Joint Validity},
+  abstract = {Inductive conformal prediction equips point regressors with
+finite-sample prediction sets that provably contain the
+unknown label with prescribed probability. For multi-target
+regression, joint coverage across all output dimensions can
+be guaranteed by combining one-dimensional conformal
+predictors, one for each output dimension, resulting in an
+axis-aligned hyperrectangular prediction region. The
+validity and informational efficiency of these
+hyperrectangular prediction regions depend on the choice of
+the targeted error rate for the individual one-dimensional
+conformal predictors. We cast this choice as an
+error-budget allocation problem and introduce Dynamic
+Conformal Prediction for Multi-Target Regression (DCP-MT),
+a method that finds the budget allocation, which minimises
+the hyperrectangles' volumes while retaining joint coverage
+under exchangeability. Experiments on synthetic and
+real-world data sets demonstrate that DCP-MT reduces
+hyperrectangle volumes compared to state-of-the-art methods
+when nonconformity scores' correlations across target
+dimensions are weak or heterogeneous, while maintaining the
+nominal coverage. The proposed method thus offers a simple,
+drop-in solution for existing multi-target regression
+pipelines.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/schlembach25/schlembach25.pdf},
+  url = {https://proceedings.mlr.press/v266/schlembach25.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {193--213},
+  section = {Multi-Output and Multi-Label Prediction},
+  crossref = {COPA2025}
+}
+
+@InProceedings{ornbratt25,
+  author = {\"{O}rnbratt, Viktor and Hallberg Szabadv\'{a}ry, Johan},
+  title = {Conformal LLM Multi-label Text Classification with Binary
+Relevance Approach},
+  abstract = {Large Language Models (LLMs) are increasingly deployed in
+real-world Natural Language Processing (NLP) systems to
+perform multi-label classification tasks, such as
+identifying multiple forms of toxicity in online content.
+However, most models output raw probabilities without an
+exact way to quantify uncertainty, increasing the risk of
+over-prediction in high-stakes applications.
+In this work, we integrate Inductive Conformal  Prediction
+(ICP) with the Binary Relevance (BR) approach to produce
+statistically valid prediction sets, label-wise. Using a
+modified Wikipedia Toxic Comments dataset, we evaluate this
+framework across varying significance levels ($\epsilon$),
+incorporating calibration-set-aware thresholds to address
+label imbalances.
+
+Our results show that BR-based conformal prediction
+maintains valid marginal coverage while enabling flexible
+control over prediction set size (efficiency). Even in the
+presence of rare labels, the framework provides practical
+uncertainty estimates and where the prediction can be
+abstained in uncertain cases via empty sets. These findings
+support the feasibility of BR-ICP-based uncertainty
+calibration for scalable, interpretable automation in
+multi-label NLP systems.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/ornbratt25/ornbratt25.pdf},
+  url = {https://proceedings.mlr.press/v266/ornbratt25.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {214--229},
+  section = {Multi-Output and Multi-Label Prediction},
+  crossref = {COPA2025}
+}
+
+@InProceedings{katsios25,
+  author = {Katsios, Kostas and Papadopoulos, Harris},
+  title = {Incorporating Structural Penalties in Multi-label Conformal
+Prediction},
+  abstract = {We propose two structural penalties for the Label-Powerset
+Split Conformal Prediction
+framework in multi-label learning. Building on our
+previously proposed Mahalanobis non-
+conformity measure, we add penalties that favour label-sets
+similar to previously observed ones in terms of Hamming
+distance and cardinality. The resulting nonconformity
+measure steers prediction regions toward label-sets that
+are both plausible and compact. Experiments on three public
+datasets (Emotions, PlantPseAAC, Yeast) show an average of
+$30\%$ reduction in prediction region size for Emotions, $82\%$
+for PlantPseAAC and $39\%$ for Yeast, compared to the
+Mahalanobis baseline.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/katsios25/katsios25.pdf},
+  url = {https://proceedings.mlr.press/v266/katsios25.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {230--249},
+  section = {Multi-Output and Multi-Label Prediction},
+  crossref = {COPA2025}
+}
+
+@InProceedings{azizi25,
+  author = {Azizi, Ilia and Boldi, Marc-Olivier and Chavez-Demoulin, Val\'{e}rie},
+  title = {SEMF: Supervised Expectation-Maximization Framework for
+Predicting Intervals},
+  abstract = {This work introduces the Supervised
+Expectation-Maximization Framework (SEMF), a versatile and
+model-agnostic approach for generating prediction intervals
+with any ML model. SEMF extends the
+Expectation-Maximization algorithm, traditionally used in
+unsupervised learning, to a supervised context, leveraging
+latent variable modeling for uncertainty estimation.
+Through extensive empirical evaluation of diverse simulated
+distributions and 11 real-world tabular datasets, SEMF
+consistently produces narrower prediction intervals while
+maintaining the desired coverage probability, outperforming
+traditional quantile regression methods. Furthermore,
+without using the quantile (pinball) loss, SEMF allows
+point predictors, including gradient-boosted trees and
+neural networks, to be calibrated with conformal quantile
+regression. The results indicate that SEMF enhances
+uncertainty quantification under diverse data distributions
+and is particularly effective for models that otherwise
+struggle with inherent uncertainty representation.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/azizi25/azizi25.pdf},
+  url = {https://proceedings.mlr.press/v266/azizi25.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {250--281},
+  section = {Conformal Regression and Predictive Distributions},
+  crossref = {COPA2025}
+}
+
+@InProceedings{bao25,
+  author = {Bao, Jie and Colombo, Nicolo and Manokhin, Valery and Cao, Suqun and Luo, Rui},
+  title = {A Review and Comparative Analysis of Univariate Conformal
+Regression Methods},
+  abstract = {As machine learning models continue to evolve and improve,
+quantifying their uncertainty has become increasingly
+crucial in high-stakes applications. Conformal prediction
+has emerged as a powerful tool and has been widely applied
+in univariate regression tasks. While numerous conformal
+regression methods and models have been developed, few
+studies have provided a unified summary and comparison of
+these approaches. In this paper, we address this gap by
+discussing, summarizing, and providing an overview of the
+majority of existing univariate conformal regression
+methods. Furthermore, we conduct a detailed examination and
+experimentation of eight major, popular, and advanced
+conformal regression methods, representing a significant
+contribution to the field by offering a comprehensive
+analysis and insights into their performance and
+applicability.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/bao25/bao25.pdf},
+  url = {https://proceedings.mlr.press/v266/bao25.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {282--304},
+  section = {Conformal Regression and Predictive Distributions},
+  crossref = {COPA2025}
+}
+
+@InProceedings{marques25,
+  author = {Marques, Paulo},
+  title = {Stacked conformal prediction},
+  abstract = {We consider the conformalization of a stacked ensemble of
+predictive models, showing that the potentially simple form
+of the meta-learner at the top of the stack enables a
+procedure with manageable computational cost that achieves
+approximate marginal validity without requiring the use of
+a separate calibration sample. Empirical results indicate
+that the method compares favorably to a standard inductive
+alternative.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/marques25/marques25.pdf},
+  url = {https://proceedings.mlr.press/v266/marques25.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {305--316},
+  section = {Conformal Regression and Predictive Distributions},
+  crossref = {COPA2025}
+}
+
+@InProceedings{cyusa-mukama25,
+  author = {Cyusa Mukama, Bruce and Messoudi, Soundouss and Rousseau, Sylvain and Destercke, S\'{e}bastien},
+  title = {Hierarchical Copula-based Conformal Prediction and Exact
+Validity via Nested Prediction Regions},
+  abstract = {Empirical, Archimedean and vine copulas have been
+repeatedly investigated and leveraged to infer conformal
+prediction regions for multivariate predictions, but they
+do not provide finite-size guarantees when the estimated
+copula is biased or misspecified. To address this
+limitation, we start with copula-based conformal prediction
+regions that are always nested and we leverage this
+property to counteract this copula-estimation bias, via an
+additional conformal re-calibration step. Furthermore, we
+introduce a simpler class of semi-parametric copulas (i.e.,
+hierarchical Archimedean copulas) as an alternative to the
+more complex vine copulas for which incorporating prior
+knowledge is difficult. Using synthetic data sets, we
+compare biased and debiased copula-based conformal
+prediction methods, and we report the impact of the data
+size and the impact of the number of output dimensions.
+Using real data, we leverage prior knowledge via this
+simpler class of copulas. In these experiments, we observe
+that this additional re-calibration step effectively
+eliminates the estimation bias of empirical and
+semi-parametric copulas when its computations are precise
+(enough) and the data size is large enough. The debiased
+hierarchical Archimedean copulas yield performances that
+are comparable to the results of debiased vine copulas.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/cyusa-mukama25/cyusa-mukama25.pdf},
+  url = {https://proceedings.mlr.press/v266/cyusa-mukama25.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {317--335},
+  section = {Conformal Regression and Predictive Distributions},
+  crossref = {COPA2025}
+}
+
+@InProceedings{du25,
+  author = {Du, Songlin and Luo, Ling and Nouretdinov, Ilia and Aickelin, Uwe},
+  title = {DUEn: An Ensemble Framework Enhanced by Distribution-Free
+Uncertainty for Regression},
+  abstract = {The main objective of ensemble learning is to aggregate
+multiple models to better capture complex data
+distributions. Various ensemble techniques, including
+bagging and boosting, have been investigated and widely
+embraced in both research and practical applications. In
+this work, we enhance ensemble learning by incorporating
+distribution-free uncertainty inspired by conformal
+prediction. Conformal prediction allows us to quantify any
+model's uncertainty rigorously with valid coverage
+guarantees under lenient assumptions of the data
+distribution. We propose a novel ensemble learning
+framework called Distribution-Free
+Uncertainty-Aware Ensemble Framework
+(DUEn) for regression tasks which uses the information from
+distribution-free uncertainty in the form of intervals to
+benefit final point predictions and makes outputs more
+accurate and robust. Moreover, we propose a weighted
+interval agreement approach that aggregates base learners
+considering the degrees of uncertainty of their
+predictions. Experiments conducted on multiple data sets
+from different domains illustrate that DUEn is capable of
+enhancing the accuracy of regression by effectively using
+data while considering each base learner's
+distribution-free uncertainty.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/du25/du25.pdf},
+  url = {https://proceedings.mlr.press/v266/du25.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {336--358},
+  section = {Conformal Regression and Predictive Distributions},
+  crossref = {COPA2025}
+}
+
+@InProceedings{johansson25,
+  author = {Johansson, Ulf and S\"{o}nstr\"{o}d, Cecilia and Maalej, Aicha},
+  title = {Explaining Set-Valued Predictions: SHAP Analysis for
+Conformal Classification},
+  abstract = {Conformal prediction offers a principled framework for
+uncertainty quantification in classification tasks by
+outputting prediction sets with guaranteed error control.
+However, the interpretability of these set-valued
+predictions, and consequently their practical usefulness,
+remains underexplored. In this paper, we introduce a method
+for explaining conformal classification outputs using SHAP
+(SHapley Additive exPlanations), enabling model-agnostic
+local and global feature attributions for the p-values
+associated with individual class labels. This approach
+allows for rich, class-specific explanations in which
+feature effects need not be symmetrically distributed
+across classes. The resulting flexibility supports the
+detection of ambiguous predictions and potential
+out-of-distribution instances in a transparent and
+structured way. While our primary focus is on explaining
+p-values, we also outline how the same framework can be
+applied to related targets, including label inclusion, set
+predictions, and the derived confidence and credibility
+measures. We demonstrate the method on several benchmark
+datasets and show that SHAP-enhanced conformal predictors
+offer improved interpretability by revealing the drivers
+behind set predictions, thereby providing actionable
+insights in high-stakes decision-making contexts.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/johansson25/johansson25.pdf},
+  url = {https://proceedings.mlr.press/v266/johansson25.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {359--378},
+  section = {Explainability and Decision Making},
+  crossref = {COPA2025}
+}
+
+@InProceedings{lanngren25,
+  author = {Lanngren, Simon and Toremark, Martin and Hallberg Szabadv\'{a}ry, Johan},
+  title = {Conformal Predictive Decision Making: A Comparative Study
+with Bayesian and Point-Predictive Methods},
+  abstract = {In many real-world settings, machine learning predictions
+serve as intermediate outputs used to inform
+decision-making. However, quantifying and accounting for
+uncertainty in these decisions remains a fundamental
+challenge. Conformal Predictive Decision Making is a
+framework for decision-making under uncertainty that
+leverages Conformal Predictive Distributions to optimize
+outcomes over a specified utility function. In this work,
+we evaluate Conformal Predictive Decision Making on
+synthetic datasets in both online and inductive settings,
+and compare its performance to two alternative approaches:
+Bayesian Decision Theory and Point Predictive Decision
+Making.
+
+Online Conformal Predictive Decision Making showed signs of
+greater robustness than Bayesian Decision Theory and Point
+Predictive Decision Making in scenarios involving noisy
+data and skewed utility functions, suggesting it may be a
+suitable option in more complex settings. However, it
+generally performed worse than the two alternative methods.
+In contrast, inductive Conformal Predictive Decision Making
+consistently outperformed the alternatives. This, combined
+with its computational advantages, makes it a promising
+approach for larger real-world decision-making applications
+where well-calibrated uncertainty quantification is needed
+for robustness.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/lanngren25/lanngren25.pdf},
+  url = {https://proceedings.mlr.press/v266/lanngren25.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {379--404},
+  section = {Explainability and Decision Making},
+  crossref = {COPA2025}
+}
+
+@InProceedings{maalej25,
+  author = {Maalej, Aicha and S\"{o}nstr\"{o}d, Cecilia and Johansson, Ulf},
+  title = {Counterfactual Explanations for Conformal Prediction Sets},
+  abstract = {Conformal classification outputs prediction sets with
+formal guarantees, making it suitable for uncertainty-aware
+decision support. However, explaining such prediction sets
+remains an open challenge, as most existing explanation
+methods, including counterfactual ones, are tailored to
+point predictions. In this paper, we introduce a novel form
+of counterfactual explanations for conformal classifiers.
+These counterfactuals identify minimal changes that modify
+the conformal prediction set at a fixed significance level,
+thereby explaining how and
+why certain classes are included or excluded. To guide the
+generation of informative counterfactuals, we consider
+proximity, sparsity, and plausibility. While proximity and
+sparsity are commonly used in the literature, we introduce
+credibility as a new measure of how well a counterfactual
+conforms to the underlying data distribution, and hence its
+plausibility. We empirically evaluate our method across
+multiple tabular datasets and optimization criteria.
+The findings demonstrate the potential of using
+counterfactual explanations for conformal classification as
+informative and trustworthy explanations for conformal
+prediction sets.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/maalej25/maalej25.pdf},
+  url = {https://proceedings.mlr.press/v266/maalej25.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {405--424},
+  section = {Explainability and Decision Making},
+  crossref = {COPA2025}
+}
+
+@InProceedings{adams25b,
+  author = {Adams, James and Reinert, Gesine and Szpruch, Lukasz and Maple, Carsten and Elliott, Andrew},
+  title = {Individualised Counterfactual Examples Using Conformal
+Prediction Intervals},
+  abstract = {Counterfactual explanations for black-box models aim to
+provide insight into an algorithmic decision to its
+recipient. For a binary classification problem an
+individual counterfactual details which features might be
+changed for the model to infer the opposite class.
+High-dimensional feature spaces that are typical of machine
+learning classification models admit many possible
+counterfactual examples to a decision, and so it is
+important to identify additional criteria to select the
+most useful counterfactuals.
+
+In this paper, we explore the idea that the counterfactuals
+should be maximally in-
+formative when considering the knowledge of a specific
+individual about the underlying classifier. To quantify
+this information gain we explicitly model the knowledge of
+the individual, and assess the uncertainty of predictions
+which the individual makes by the width of a conformal
+prediction interval. Regions of feature space where the
+prediction interval is wide correspond to areas where the
+confidence in decision making is low, and an additional
+counterfactual example might be more informative to an
+individual.
+
+To explore and evaluate our individualised conformal
+prediction interval counterfactuals (CPICFs), first we
+present a synthetic data set on a hypercube which allows us
+to fully visualise the decision boundary, conformal
+intervals via three different methods, and resultant
+CPICFs. Second, in this synthetic data set we explore the
+impact of a single CPICF on the knowledge of an individual
+locally around the original query. Finally, in both our
+synthetic data set and a complex real world dataset with a
+combination of continuous and discrete variables, we
+measure the utility of these counterfactuals via data
+augmentation,
+testing the performance on a held out set.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/adams25b/adams25b.pdf},
+  url = {https://proceedings.mlr.press/v266/adams25b.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {425--444},
+  section = {Explainability and Decision Making},
+  crossref = {COPA2025}
+}
+
+@InProceedings{hulsman25,
+  author = {Hulsman, Roel and Comte, Valentin and Bertolini, Lorenzo and Wiesenthal, Tobias and Puertas Gallardo, Antonio and Ceresa, Mario},
+  title = {Conformal Risk Control for Pulmonary Nodule Detection},
+  abstract = {Quantitative tools are increasingly appealing for decision
+support in healthcare, driven by the growing capabilities
+of advanced AI systems. However, understanding the
+predictive uncertainties surrounding a tool's output is
+crucial for decision-makers to ensure reliable and
+transparent decisions. In this paper, we present a case
+study on pulmonary nodule detection for lung cancer
+screening, enhancing an advanced detection model with an
+uncertainty quantification technique called conformal risk
+control (CRC). We demonstrate that prediction sets with
+conformal guarantees are attractive measures of predictive
+uncertainty in the safety-critical healthcare domain,
+allowing end-users to achieve arbitrary validity by trading
+off false positives and providing formal statistical
+guarantees on model performance. Among ground-truth nodules
+annotated by at least three radiologists, our model
+achieves a sensitivity that is competitive with that
+generally achieved by individual radiologists, with a
+slight increase in false positives. Furthermore, we
+illustrate the risks of using off-the-shelve prediction
+models when faced with ontological uncertainty, such as
+when radiologists disagree on what constitutes the ground
+truth on pulmonary nodules.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/hulsman25/hulsman25.pdf},
+  url = {https://proceedings.mlr.press/v266/hulsman25.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {445--463},
+  section = {Applications},
+  crossref = {COPA2025}
+}
+
+@InProceedings{sesia25,
+  author = {Sesia, Matteo and Svetnik, Vladimir},
+  title = {Conformal Survival Bands for Risk Screening under
+Right-Censoring},
+  abstract = {We introduce a method for quantifying uncertainty around
+individual survival curves produced by any survival model
+under general right-censoring, with formal guarantees of
+predictive calibration. Unlike classical confidence
+intervals, which focus on population-level quantities such
+as conditional survival probabilities, our approach
+constructs survival bands tailored for personalized risk
+screening. These bands support arbitrary selection rules
+aimed at identifying high- or low-risk individuals, while
+approximately controlling the false discovery rate. For
+instance, in a high-risk screening scenario, practitioners
+can flag patients whose entire survival band at 12 months
+falls below $50\%$, while being confident that, on average,
+no more than $50\%$ of flagged individuals will survive past
+that point. Our method builds on recent advances in
+conformal inference and incorporates ideas from inverse
+probability of censoring weighting and multiple testing. We
+provide asymptotic guarantees and demonstrate strong
+finite-sample performance using both synthetic and
+real-world data.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/sesia25/sesia25.pdf},
+  url = {https://proceedings.mlr.press/v266/sesia25.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {464--514},
+  section = {Applications},
+  crossref = {COPA2025}
+}
+
+@InProceedings{zouzou25,
+  author = {Zouzou, Alya and And\'{e}ol, L\'{e}o and Ducoffe, M\'{e}lanie and Boumazouza, Ryma},
+  title = {Robust Vision-Based Runway Detection through Conformal
+Prediction and Conformal mAP},
+  abstract = {We explore the use of conformal prediction to provide
+statistical uncertainty guarantees for runway detection in
+vision-based landing systems (VLS). Using fine-tuned YOLOv5
+and YOLOv6 models on aerial imagery, we apply conformal
+prediction to quantify localization reliability under
+user-defined risk levels. We also introduce Conformal mean
+Average Precision (C-mAP), a novel metric aligning object
+detection performance with conformal guarantees. Our
+results show that conformal prediction can improve the
+reliability of runway detection by quantifying uncertainty
+in a statistically sound way, increasing safety on-board
+and paving the way for certification of ML system in the
+aerospace domain.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/zouzou25/zouzou25.pdf},
+  url = {https://proceedings.mlr.press/v266/zouzou25.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {515--534},
+  section = {Applications},
+  crossref = {COPA2025}
+}
+
+@InProceedings{ahmed25,
+  author = {Ahmed, Yehia and Roza, Felippe and Mata, N\'{u}ria},
+  title = {Temporal Multimodal Probabilistic Transformers for Safety
+Monitoring in Autonomous Driving Systems},
+  abstract = {Ensuring reliable safety monitoring in autonomous driving
+systems (ADS) under uncertainty is essential for deployment
+in real-world scenarios. We propose the Temporal Multimodal
+Probabilistic Transformer (TMPT), a novel deep learning
+framework that integrates uncertainty quantification (UQ)
+into lane-keeping safety monitoring. TMPT forecasts lane
+deviation metrics along with calibrated aleatoric and
+epistemic uncertainties by processing sequences of
+multimodal sensor and control data. Our framework combines
+Transformer-based temporal fusion with deep ensembles and
+post-hoc calibration to improve predictive accuracy and
+uncertainty estimation. We evaluate 24 model variants in
+the CARLA simulator, analyzing the impact of architecture,
+calibration, and ensembling on both prediction and
+uncertainty. Calibrated models achieve near-perfect
+uncertainty reliability ($ENCE < 0.03$), while uncalibrated
+models show sharper predictions but overconfident errors.
+Ensemble methods further improve robustness but incur
+significant computational cost. Our findings show that
+aligning model selection with application context--balancing
+precision, calibration, and efficiency--is critical for safe
+and practical ADS deployment.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/ahmed25/ahmed25.pdf},
+  url = {https://proceedings.mlr.press/v266/ahmed25.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {535--554},
+  section = {Applications},
+  crossref = {COPA2025}
+}
+
+@InProceedings{rakhshaninejad25,
+  author = {Rakhshaninejad, Morteza and J\"{u}rgens, Mira and Dewolf, Nicolas and Waegeman, Willem},
+  title = {Conformal Prediction for Uncertainty Estimation in
+Drug-Target Interaction Prediction},
+  abstract = {Accurate drug--target interaction (DTI) prediction with
+machine learning models is essential for drug discovery.
+Such models should also provide a credible representation
+of their uncertainty, but applying classical marginal
+conformal prediction (CP) in DTI prediction often overlooks
+variability across drug and protein subgroups. In this
+work, we analyze three cluster-conditioned CP methods for
+DTI prediction, and compare them with marginal and
+group-conditioned CP. Clusterings are obtained via
+nonconformity scores, feature similarity, and nearest
+neighbors, respectively. Experiments on the KIBA dataset
+using four data-splitting strategies show that
+nonconformity-based clustering yields the tightest
+intervals and most reliable subgroup coverage, especially
+in random and fully unseen drug--protein splits.
+Group-conditioned CP works well when one entity is
+familiar, but residual-driven clustering provides robust
+uncertainty estimates even in sparse or novel scenarios.
+These results highlight the potential of cluster-based CP
+for improving DTI prediction under uncertainty.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/rakhshaninejad25/rakhshaninejad25.pdf},
+  url = {https://proceedings.mlr.press/v266/rakhshaninejad25.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {555--575},
+  section = {Applications},
+  crossref = {COPA2025}
+}
+
+@InProceedings{vovk25a,
+  author = {Vovk, Vladimir and Nouretdinov, Ilia and Gammerman, Alexander},
+  title = {Validity and efficiency of the conformal CUSUM procedure},
+  abstract = {In this paper we study the validity and efficiency of a
+conformal version of the CUSUM
+procedure for change detection both experimentally and
+theoretically. Unlike the standard CUSUM procedure, its
+conformal version tests repeatedly a massive null
+hypothesis, that of the data being IID. We establish a
+novel property of validity for the conformal CUSUM
+procedure and for the first time establish a property of
+efficiency.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/vovk25a/vovk25a.pdf},
+  url = {https://proceedings.mlr.press/v266/vovk25a.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {576--594},
+  section = {Online Testing, Change and Anomaly Detection},
+  crossref = {COPA2025}
+}
+
+@InProceedings{hallberg-szabadvary25,
+  author = {Hallberg Szabadv\'{a}ry, Johan and L\"{o}fstr\"{o}m, Tuwe and Matela, Rudy},
+  title = {online-cp: a Python Package for Online Conformal
+Prediction, Conformal Predictive Systems and Conformal Test
+Martingales},
+  abstract = {Conformal prediction (CP) has gained increasing attention
+in machine learning owing to its ability to provide
+reliable prediction sets with well-calibrated uncertainty
+estimates. While most existing CP implementations focus on
+inductive conformal prediction (ICP), full conformal
+prediction--also known as online or transductive CP--offers
+the strongest validity guarantees but has been largely
+absent from open-source software due to its computational
+complexity. In this paper, we introduce \texttt{online-cp},
+a Python package designed for online conformal prediction,
+conformal predictive systems (CPS), and conformal test
+martingales. The package implements several online CP
+algorithms, enabling efficient and principled uncertainty
+quantification in streaming data scenarios. Additionally,
+it includes tools for testing the exchangeability
+assumption by using conformal test martingales. We
+demonstrate the functionality of \texttt{online-cp} through
+classification and regression examples as well as
+applications to predictive systems and exchangeability
+testing. By making online CP methods accessible,
+\texttt{online-cp} provides a foundation for broader
+adoption and further development of conformal prediction in
+real-time machine learning applications},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/hallberg-szabadvary25/hallberg-szabadvary25.pdf},
+  url = {https://proceedings.mlr.press/v266/hallberg-szabadvary25.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  software = {https://github.com/egonmedhatten/online-cp},
+  pages = {595--614},
+  section = {Online Testing, Change and Anomaly Detection},
+  crossref = {COPA2025}
+}
+
+@InProceedings{bostrom25,
+  author = {Bostr\"{o}m, Henrik},
+  title = {Testing Exchangeability for Multiple Sequences of P-values},
+  abstract = {Given a sequence of p-values, conformal test martingales
+can be used for signaling that the
+exchangeability assumption is violated, while the false
+alarm rate is controlled by a user-
+specified significance level. In some scenarios, multiple
+p-values are observed at each time
+step, e.g., p-values may be received from multiple
+conformal predictors for a single target,
+or p-values are obtained for multiple targets. In such
+cases, signaling whenever a violation
+is detected for any of the sequences, leads to an increased
+risk of false alarms. Bonferroni
+correction, which is a standard approach to controlling the
+error rate when testing multiple
+hypotheses, is shown to be dominated by the straightforward
+approach of forming a single
+conformal test martingale from the martingales generated
+from the individual sequences of
+p-values. In addition to testing exchangeability for the
+individual sequences, approaches for
+testing them jointly are also investigated. For the latter,
+the use of aggregation operators
+to transform multiple sequences of p-values into a single
+sequence is investigated, as well
+as a previously proposed approach for detecting covariate
+shift. Experimental results are
+presented, highlighting the potential strengths and
+weaknesses of the different approaches.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/bostrom25/bostrom25.pdf},
+  url = {https://proceedings.mlr.press/v266/bostrom25.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {615--632},
+  section = {Online Testing, Change and Anomaly Detection},
+  crossref = {COPA2025}
+}
+
+@InProceedings{capuccini25,
+  author = {Capuccini, Marco and Pai, Rahul Rajendra and Carlsson, Lars},
+  title = {Testing by Betting for Anomaly Detection in Rental
+E-Scooter GNSS Traces},
+  abstract = {Shared micromobility, particularly rental e-scooters, has
+rapidly transformed urban transportation. Voi Technology
+has been at the forefront of this shift, powering over 300M
+rides across Europe. While most customers use the service
+responsibly, mitigating reckless riding emerges as a
+significant challenge given the high ridership. Previous
+research shows that riders taking indirect routes are more
+likely to be involved in safety-critical events, suggesting
+potentially irresponsible riding behavior. However,
+directness alone can overlook important intra-trip
+patterns. Therefore, in this study, we use GNSS positioning
+as a proxy for intra-trip riding behavior. We model a
+typical ride as a sequence of turning angles derived from
+GNSS coordinates and detect anomalies leveraging the
+testing-by-betting framework, which provides formal
+guarantees on false positive rates while achieving a
+favorable trade-off with false negatives. The presented
+method is designed to operate under limited onboard
+compute, with minimal complexity for deployment across
+large vehicle fleets, without requiring the GNSS trace to
+be stored---a key privacy advantage. In a real-world
+evaluation, the method detects approximately 60\% of
+reckless rides while maintaining operationally acceptable
+false positive rates.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/capuccini25/capuccini25.pdf},
+  url = {https://proceedings.mlr.press/v266/capuccini25.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {633--644},
+  section = {Online Testing, Change and Anomaly Detection},
+  crossref = {COPA2025}
+}
+
+@InProceedings{lardy25,
+  author = {Lardy, Tyron and P\'{e}rez-Ortiz, Muriel F.},
+  title = {Anytime-Valid Tests of Group Invariance through Conformal
+Prediction},
+  abstract = {Many standard statistical hypothesis tests, including those
+for normality and  exchangeability, can be reformulated as
+tests of invariance under a group of transformations. We
+develop anytime-valid tests of invariance under the action
+of general compact groups and show their optimality---in a
+specific logarithmic-growth sense---against certain
+alternatives. This is achieved by using the invariant
+structure of the problem to construct conformal test
+martingales, a class of objects associated to conformal
+prediction. We apply our methods to extend recent
+anytime-valid tests of independence, which leverage
+exchangeability, to work under general group invariances.
+Additionally, we show applications to testing for
+invariance under subgroups of rotations, which corresponds
+to testing the Gaussian-error assumptions in linear models.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/lardy25/lardy25.pdf},
+  url = {https://proceedings.mlr.press/v266/lardy25.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {645--665},
+  section = {Online Testing, Change and Anomaly Detection},
+  crossref = {COPA2025}
+}
+
+@InProceedings{adams25a,
+  author = {Adams, Jason and Berman, Brandon and Michalenko, Joshua and Tucker, J. Derek},
+  title = {Conformal Anomaly Detection for Functional Data with
+Elastic Distance Metrics},
+  abstract = {This paper considers the problem of outlier detection in
+functional data analysis with a particular focus on the
+more difficult case of shape outliers. We present an
+inductive conformal anomaly detection method based on
+elastic functional distance metrics. This method is
+evaluated and compared to similar conformal anomaly
+detection methods for functional data using simulation
+experiments. The method is also used in the analysis of a
+real exemplar data set that shows its utility in a
+practical application. The results demonstrate the efficacy
+of the proposed method for detecting both magnitude and
+shape outliers.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/adams25a/adams25a.pdf},
+  url = {https://proceedings.mlr.press/v266/adams25a.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {666--686},
+  section = {Online Testing, Change and Anomaly Detection},
+  crossref = {COPA2025}
+}
+
+@InProceedings{garg25,
+  author = {Garg, Ishan and Majumder, Shayan},
+  title = {On the Integration of Cross-Conformal Prediction,
+Ensembles, and Sampling for Uncertainty Quantification in
+One-Class Anomaly Detection},
+  abstract = {Given the increasing usage of black-box Machine Learning
+models in high-risk scenarios such as clinical trials and
+fraud detection, a need for safe, robust and trustworthy
+machine learning solutions with reliable outcomes becomes
+all the more paramount. Uncertainty quantification in
+anomaly detection applications helps the cause of
+trustworthiness in non-parametric models used in One-Class
+classification. While ensembles and the sampling approach
+can quantify uncertainty by learning on varied
+distributions of data and aggregating multiple predictions
+on test data, making the results more robust, statistical
+guarantees for Type-I Errors are not provided by ensembling
+and sampling techniques. This is where conformal prediction
+comes into play, providing statistical guarantees for
+controlling Type-I errors (false positives) below a
+user-specified error threshold, whilst not compromising on
+the Type-II errors (false negatives).
+ This work proposes B_aKC+, a novel approach for
+ cross-conformal anomaly detection by combining K-fold
+ cross-validation based cross-conformal prediction with
+ ensembles and sampling techniques. B_aKC+ proves to be a
+ model-agnostic, distribution-free uncertainty
+ quantification technique for highly imbalanced datasets,
+ providing conformal guarantees for Type-I errors whilst
+ showcasing high statistical power. Without additional
+ post-hoc operations for Type-I error control needed,
+ B_aKC+ outperforms existing cross-conformal frameworks on
+ benchmark anomaly detection datasets, and demonstrates
+ itself to be a robust and reliable conformal anomaly
+ detection framework, providing highly certain outcomes to
+ the data analyst.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/garg25/garg25.pdf},
+  url = {https://proceedings.mlr.press/v266/garg25.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {687--705},
+  section = {Online Testing, Change and Anomaly Detection},
+  crossref = {COPA2025}
+}
+
+@InProceedings{eliades25,
+  author = {Eliades, Charalambos and Papadopoulos, Harris},
+  title = {A Conformal Martingales Approach for Recurrent Concept Drift},
+  abstract = {In many Concept Drift scenarios, previously seen data
+distributions reappear. This type of drift is known as
+Recurrent Concept Drift and is especially common in
+environments with seasonality, user-behavior cycles, or
+regime changes. This work extends our previously proposed
+Inductive Conformal Martingales(ICM) concept drift approach
+so that it can reuse earlier models, thus saving
+computational resources and data. Upon drift detection, the
+proposed approach selects a model from a pool of all
+earlier models if (i) ICM fails to reject exchangeability
+between a recent-data window and the window immediately
+following that model's training set, and (ii) the model's
+F1 score on the current window exceeds a threshold derived
+from its historical performance. It only trains a new model
+when no stored model satisfies both criteria. Experiments
+on three public data streams (STAGGER, Airlines and ELEC)
+cut retraining events by up to 94% and reduce wasted
+training instances by 22%-33%, while limiting accuracy loss
+to less than 3 percentage points relative to always
+retraining.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/eliades25/eliades25.pdf},
+  url = {https://proceedings.mlr.press/v266/eliades25.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {706--724},
+  section = {Online Testing, Change and Anomaly Detection},
+  crossref = {COPA2025}
+}
+
+@InProceedings{retzlaff25,
+  author = {Retzlaff, Konrad and Schlembach, Filip and Bams, Dennis and Dreesen, Philippe},
+  title = {Testing Marginal and Conditional Coverage in Conformal
+Prediction for Non-Stationary Time Series via Value-at-Risk
+Backtesting},
+  abstract = {Conformal Prediction (CP) constructs prediction intervals
+with marginal coverage guarantees under the assumption of
+exchangeability, yet it has also been widely applied to
+non-exchangeable settings such as time series, where
+temporal dependence and distribution shifts often violate
+this assumption. Despite this, CP methods are typically
+evaluated using descriptive metrics like empirical coverage
+and average interval width, without formal statistical
+testing. This lack of hypothesis-driven evaluation makes it
+unclear whether deviations are meaningful or due to random
+variation. We address this gap by establishing a formal
+equivalence between CP and Value-at-Risk (VaR), enabling
+the use of VaR-style backtesting methods to statistically
+assess both marginal and conditional coverage.
+Additionally, we incorporate Diebold-Mariano tests with
+interval scores to compare predictive
+performance. Applied to synthetic, electricity, and
+financial time series, our framework uncovers violation and
+adaptation issues overlooked by standard metrics. The
+Dynamic Binary Test and the Geometric Conformal
+Backtesting, in particular, identifies covariate-and
+drift-induced dependence and miscalibration, offering a
+sharper lens for evaluating CP methods in non-stationary
+settings.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/retzlaff25/retzlaff25.pdf},
+  url = {https://proceedings.mlr.press/v266/retzlaff25.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {725--747},
+  section = {Online Testing, Change and Anomaly Detection},
+  crossref = {COPA2025}
+}
+
+@InProceedings{pion25,
+  author = {Pion, Aur\'{e}lien and Vazquez, Emmanuel},
+  title = {A Bayesian framework for calibrating Gaussian process
+predictive distributions},
+  abstract = {Gaussian processes (GPs) provide principled uncertainty
+quantification
+through posterior predictive distributions. However, these
+distributions may be miscalibrated in practice when
+hyperparameters are estimated from data. This
+miscalibration can lead
+to unreliable decisions in downstream tasks. In this work,
+we propose
+calGP, a Bayesian calibration method that retains the GP
+posterior mean while modeling the normalized prediction
+error with a generalized normal distribution. The shape and
+scale
+parameters of this distribution are selected using a
+posterior
+sampling strategy guided by PIT-based calibration metrics.
+The
+resulting predictive distribution supports continuous
+confidence
+levels and improves tail behavior without retraining the
+underlying
+GP. We also introduce KS-PIT, a scalar diagnostic based on
+the
+Kolmogorov--Smirnov distance between PIT values and the
+uniform
+distribution. Numerical experiments demonstrate that calGP
+achieves
+better calibration than standard GP models, with
+controllable conservativeness and interpretable diagnostics.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/pion25/pion25.pdf},
+  url = {https://proceedings.mlr.press/v266/pion25.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {748--750},
+  section = {Extended Abstracts},
+  crossref = {COPA2025}
+}
+
+@InProceedings{moudiki25,
+  author = {Moudiki, Thierry},
+  title = {Conformal Predictive Simulations for Univariate Time Series},
+  abstract = {Uncertainty quantification is useful because it allows,
+among other things, for the as-
+sessment of impact of alternative, hypothetical scenarios
+on business metrics of interest.
+
+For example, in the context of electricity load
+forecasting, uncertainty quantification can help in
+assessing the impact of a drop in temperature on
+electricity demand, and taking appropriate measures to
+avoid blackouts. In financial forecasting, uncertainty
+quantification can help in assessing the impact of an
+increase in stock market on a portfolio, and taking
+appropriate measures to avoid large losses. Another
+application, in insurance, is the calculation of capital
+requirements in extremely adverse situations.
+
+In this context, despite having been available for decades,
+Conformal Prediction (CP) is becoming more and more
+popular, and a gold standard
+technique.
+This study proposes a revisited approach to uncertainty
+quantification for univariate
+time series forecasting, that can be adapted to
+multivariate time series forecasting. The approach adapts
+split conformal prediction,
+usually applied to tabular data but never to sequential
+data, to sequential data.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/moudiki25/moudiki25.pdf},
+  url = {https://proceedings.mlr.press/v266/moudiki25.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {751--752},
+  section = {Extended Abstracts},
+  crossref = {COPA2025}
+}
+
+@InProceedings{carreno25,
+  author = {Carreno, Javier and Nguyen, Khuong An and Luo, Zhiyuan and Fish, Andrew},
+  title = {Reliable Household Demographic Classification},
+  abstract = {We propose the Hybrid Calibration Score (HCS), a new
+nonconformity measure for inductive conformal prediction.
+HCS combines instance-level scoring with global model
+calibration via Expected Calibration Error. On a real-world
+demographic classification task, HCS achieves 99% coverage
+with smaller prediction sets (APS = 1.55) and higher
+decisiveness (OneC = 55.19%) than standard measures, while
+preserving formal coverage guarantees.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/carreno25/carreno25.pdf},
+  url = {https://proceedings.mlr.press/v266/carreno25.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {753--755},
+  section = {Extended Abstracts},
+  crossref = {COPA2025}
+}
+
+@InProceedings{chakraborti25,
+  author = {Chakraborti, Tapabrata and Dey, Samiran},
+  title = {Conformal Prediction for Reliable Image Super-Resolution},
+  abstract = {Single image super-resolution (SISR) has been employed over
+a wide range of applications to enhance the visual quality
+and details of images. For training super-resolution (SR)
+models, low-resolution (LR) images are synthesized from the
+high-resolution (HR) images. However, these artificial
+intelligence (AI) methods for SR (like diffusion based or
+generative adversarial models) have stochastic elements
+that are inherent to the learning process that can be
+mitigated but not avoided. Effectively this means that for
+the same input LR image, different instantiations of the
+generative process is expected to produce slightly
+different HR output images. While this might not be an
+issue for certain applications, and in fact might provide
+interesting variations in tasks like AI art generation, in
+certain other high stakes applications like medical image
+super-resolution, such variations need to be tightly
+controlled and rigorously quantified. After all, when
+superresolving a biomedical image (say radiology) one would
+ideally expect the output to be invariant for a patient if
+it is a static time-independent image. In fact, though the
+point of super-resolving a biomedical image is to provide
+the human expert (or indeed an equivalent AI system) the
+visual clarity to make a better evaluation, having
+degradation of clinical features or introduction of
+spurious morphological features would defeat the purpose,
+and potentially increase the chances of a false inference.
+Thus it is important in such high risk applications to
+predict uncertainty bounds for the generated images using a
+conformal prediction inspired estimate of maximum
+calibrated coverage.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/chakraborti25/chakraborti25.pdf},
+  url = {https://proceedings.mlr.press/v266/chakraborti25.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {756--757},
+  section = {Extended Abstracts},
+  crossref = {COPA2025}
+}
+
+@InProceedings{dong25,
+  author = {Dong, Genghua and Bresson, Roman and Bostr\"{o}m, Henrik},
+  title = {Detect Adversarial Examples with Exchangeability Martingale},
+  abstract = {Adversarial examples (AEs) are raw examples perturbed in a
+way that is indistinguishable by humans, misleading DNNs
+into an incorrect prediction. When present in a sequence of
+examples, AEs disrupt the assumption of exchangeability
+that examples are drawn i.i.d. from a fixed time-invariant
+distribution. In this paper, we propose an efficient method
+for AEs detection in image sequences based on conformal
+test martingales constructed from example embeddings. To
+improve the sensitivity of AEs detection, we further
+augment embeddings with gradient-based attention and local
+intrinsic dimension (LID) modulation. Our study
+demonstrates the high efficiency of detecting AEs generated
+by FGSM, PGD, and CW methods under different hyperparameter
+settings.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/dong25/dong25.pdf},
+  url = {https://proceedings.mlr.press/v266/dong25.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {758--761},
+  section = {Extended Abstracts},
+  crossref = {COPA2025}
+}
+
+@InProceedings{ioannides25,
+  author = {Ioannides, Dimitrios and Ioannidis, Stavros},
+  title = {Exponential Estimates for Contagion in Financial Networks},
+  abstract = {In financial systems contagion occurs when the default of
+institutions affected by a random shock triggers a domino
+effect, leading to defaults of other institutions within a
+given set. We provide a sufficient and necessary condition
+for weak contagion using exponential estimates for
+contagion and default probabilities resulting from
+Sub-Gaussian shocks.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/ioannides25/ioannides25.pdf},
+  url = {https://proceedings.mlr.press/v266/ioannides25.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {762--764},
+  section = {Extended Abstracts},
+  crossref = {COPA2025}
+}
+
+@InProceedings{xie25,
+  author = {Xie, Tianmin and Liang, Ziyi and Favaro, Stefano and Sesia, Matteo},
+  title = {Conformal Classification with New Labels},
+  abstract = {We propose Conformal Good-Turing Classification (CGTC), a novel conformal inference method for
+classification tasks where the true label space is unknown
+or potentially infinite.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/xie25/xie25.pdf},
+  url = {https://proceedings.mlr.press/v266/xie25.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {765--767},
+  section = {Extended Abstracts},
+  crossref = {COPA2025}
+}
+
+@InProceedings{murchante-arjona25,
+  author = {Marchante Arjona, Luis and Bhattacharjee, Protim and Jung, Peter},
+  title = {Class-Conditional Robust Conformal Prediction for
+Structured Perturbations},
+  abstract = {We introduce a conformal prediction (CP)
+method that leverages class-conditional randomized
+smoothing with spectrally localized perturbations to
+address structured corruption in AI-driven multispectral
+image classification. This setting reflects realistic
+corruptions such as those found in remote sensing and other
+sensor-based applications, where specific object categories
+may be disproportionately affected by environmental or
+hardware-induced fluctuations, e.g. specifically only in
+red spectral channel or near-infrared channels. The
+Randomized Smoothed Conformal Prediction (RSCP) framework makes use of global uniform noise to
+construct valid prediction sets. Since real-world
+perturbation are rarely uniform, RSCP would lead to an
+increased prediction set size for uncorrupted classes,
+reducing informativeness and efficiency of the conformal
+method. For such asymmetric perturbations, we propose a
+class-conditional RSCP framework in which perturbations are
+applied only to certain target classes. Our approach allows
+for risk-stratified robustness, providing more nuanced
+uncertainty estimates to critical or noise-prone classes
+without sacrificing coverage for unaffected categories.
+Class conditional coverage guarantees for smoothed scores
+with class-dependent noise is guaranteed.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/murchante-arjona25/murchante-arjona25.pdf},
+  url = {https://proceedings.mlr.press/v266/murchante-arjona25.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {768--770},
+  section = {Extended Abstracts},
+  crossref = {COPA2025}
+}
+
+@InProceedings{andeol25,
+  author = {And\'{e}ol, L\'{e}o and Mass\'{e}na, Thomas},
+  title = {Sequential Conformal Risk Control for Safe Railway
+Signaling Detection},
+  abstract = {As machine learning becomes a more common tool in industry,
+its needs for certification increase. Conformal Prediction,
+a framework for construction of prediction sets with tight
+coverage guarantees at any desired error rate, is an ideal
+tool for this purpose.
+    However, adapting conformal methods to complex computer
+    vision pipelines and providing appropriate guarantees
+    is still a challenging task. Indeed, conformal
+    approaches to object detection are often restricted to
+    subtasks: often localization, and sometimes
+    classification. In this study, we apply the
+    comprehensive framework from (Andeol, 2025) to the
+    safety-critical task of railway signaling detection.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/andeol25/andeol25.pdf},
+  url = {https://proceedings.mlr.press/v266/andeol25.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {771--774},
+  section = {Extended Abstracts},
+  crossref = {COPA2025}
+}
+
+@InProceedings{li25,
+  author = {Li, Ziyun and Bostr\"{o}m, Henrik},
+  title = {FlowGuard: Guarding Flow Matching via Conformal Sampling},
+  abstract = {Despite achieving state-of-the-art performance on average,
+iterative generative models such as diffusion and flow
+matching remain vulnerable to per-sample failures,
+sporadically hallucinating object parts, or disregarding
+conditioning inputs. These rare but critical errors often
+go undetected, necessitating repeated sampling. We
+introduce FlowGuard, a lightweight, model-agnostic
+conformal framework that enforces sample-level reliability
+during inference. By monitoring trajectory curvature via
+velocity jumps and rejecting trajectories exceeding a
+calibrated threshold, FlowGuard provides formal reliability
+guarantees with negligible computational cost. It operates
+entirely on cached model outputs and requires no
+architectural changes. Experiments on CIFAR-10 demonstrate
+that FlowGuard improves sample quality, reducing FID by up
+to 2.8\%, while enabling early termination of low-quality
+generations.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/li25/li25.pdf},
+  url = {https://proceedings.mlr.press/v266/li25.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {775--777},
+  section = {Extended Abstracts},
+  crossref = {COPA2025}
+}
+
+@InProceedings{narteni25,
+  author = {Narteni, Sara and Carlevaro, Alberto and Duan, Zeming and Autexier, Serge and Mongelli, Maurizio},
+  title = {Physics-Aware Conformal Prediction for Deep Learning-based
+Wheelchair Local Navigation},
+  abstract = {When dealing with conformal prediction for real-world
+artificial intelligence applications, it is necessary to
+ensure its physical feasibility. In this work, we propose
+to tackle this problem for an autonomous wheelchair guided
+by a deep neural network for local navigation. We adapt the
+conformal sets to be compliant with the wheelchair's
+kinematics, enhancing their efficiency while preserving
+coverage guarantees.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/narteni25/narteni25.pdf},
+  url = {https://proceedings.mlr.press/v266/narteni25.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {778--780},
+  section = {Extended Abstracts},
+  crossref = {COPA2025}
+}
+
+@InProceedings{kaya25,
+  author = {Kaya, Ipek and Nguyen, Khuong An},
+  title = {Conformal Prediction for Reliable Stock Selections},
+  abstract = {A major challenge in quantitative finance is not just
+predicting which stocks will outper- form but quantifying
+the uncertainty and reliability of those predictions. This
+is critical because financial markets are inherently noisy,
+volatile, and affected by countless unpre- dictable
+factors, meaning that even the best models can be wrong,
+sometimes dramatically so. Reliable measures of uncertainty are essential for
+risk- aware investment decisions, they help portfolio
+managers judge when to trust a prediction, size positions
+appropriately, and avoid overconfidence that can lead to
+costly losses.
+Currently, most machine learning approaches for stock
+selection produce only point predictions, offering no meaningful measure of confidence,
+which limits their practical value for investors who need
+to manage risk. Thus, in this paper, we bench- marked
+classical and deep learning models for US stock selection, and applied conformal prediction (CP)
+to generate well-calibrated prediction sets. Across all models, CP achieved empirical
+coverage closely matching the nom- inal confidence level,
+with most prediction sets being singletons. This result
+demonstrated the potential of applying CP for reliable and
+interpretable stock selection.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/kaya25/kaya25.pdf},
+  url = {https://proceedings.mlr.press/v266/kaya25.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {781--783},
+  section = {Extended Abstracts},
+  crossref = {COPA2025}
+}
+
+@InProceedings{sale25,
+  author = {Sale, Yusuf and Javanmardi, Alireza and H\"{u}llermeier, Eyke},
+  title = {Aleatoric and Epistemic Uncertainty in Conformal Prediction},
+  abstract = {Recently, there has been a particular interest in distinguishing different types of uncertainty in supervised machine learning (ML) settings (Hullermeier and Waegeman, 2021). Aleatoric uncertainty captures the inherent randomness in the data-generating process. As it represents variability that cannot be reduced even with more data, it is often referred to as irreducible uncertainty. In contrast, epistemic uncertainty arises from a lack of knowledge about the underlying data-generating process, which--in principle--can be reduced by acquiring additional data or improving the model itself (viz. reducible uncertainty). In parallel, interest in conformal prediction (CP)--both its theory and applications--has become equally vigorous. Conformal Prediction (Vovk et al., 2005) is a model-agnostic
+framework for uncertainty quantification that provides prediction sets or intervals with rigorous statistical coverage guarantees. Notably, CP is distribution-free and makes only the mild assumption of exchangeability. Under this assumption, it yields prediction intervals that contain the true label with a user-specified probability. Thus, CP is seen as a promising
+tool to quantify uncertainty. But how is it related to aleatoric and epistemic uncertainty? In particular, we first analyze how (estimates of) aleatoric and epistemic uncertainty enter
+into the construction of vanilla CP--that is, how noise and model error jointly shape the global threshold. We then review ``uncertainty-aware'' extensions that integrate these uncertainty estimates into the CP pipeline.},
+  pdf = {https://raw.githubusercontent.com/mlresearch/v266/main/assets/sale25/sale25.pdf},
+  url = {https://proceedings.mlr.press/v266/sale25.html},
+  booktitle = {Proceedings of the Fourteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = {784--786},
+  section = {Extended Abstracts},
+  crossref = {COPA2025}
+}
