@@ -5,7 +5,7 @@ shortname: COPA
 publisher: PMLR
 series: Proceedings of Machine Learning Research
 year: '2025'
-start: &1 2025-09-10
+start: 2025-09-10
 end: 2025-09-12
 published: 2025-08-12
 conference_number: '14'
@@ -103,7 +103,7 @@ conference:
   url: https://copa-conference.com/
   location: Royal Holloway, London, UK
   dates:
-  - *1
+  - 2025-09-10
   - 2025-09-11
   - 2025-09-12
 analytics:
